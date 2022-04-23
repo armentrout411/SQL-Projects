@@ -1,0 +1,20 @@
+CREATE TABLE inventory (id INTEGER PRIMARY KEY, name TEXT, color TEXT, price INTEGER, quantity INTEGER);
+INSERT INTO inventory VALUES (1, "dog collar","red", "13", 4);
+INSERT INTO inventory VALUES (2, "cat collar", "blue", "8", 5);
+Insert into inventory values (3, "dog leash", "red", "8",1);
+insert into inventory values (4, "cat leash", "blue","7",3);
+insert into inventory values (5, "dog toy", "black", "4",3);
+insert into inventory values (6, "cat nip toy", "pink", "4", 3);
+insert into inventory values (7,"dog shampoo", "clear", "5", 15);
+insert into inventory values (8,"shedding blade","silver", "15", 2);
+insert into inventory values (9, "pin brush","orange","10",2);
+insert into inventory values (10,"shears","silver", "5",2);
+insert into inventory values (11,"nail caps","pink","8",3);
+insert into inventory values (12,"breath mints","green","3",3);
+insert into inventory values (13,"pigs ear","pink","3", 50);
+insert into inventory values (14,"rawhide","cream","3",100);
+insert into inventory values (15,"ear cleaner", "clear", "5",4);
+
+SELECT * FROM inventory ORDER BY price;
+
+SELECT AVG(price) from inventory;
